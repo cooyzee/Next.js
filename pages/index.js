@@ -4,7 +4,7 @@ import fetch from 'isomorphic-unfetch'
 
 const PostLink = ({ post }) => (
   <li>
-    <Link as={`/p/${post.id}`} href={`/post?title=${post.name}`}>
+    <Link as={`/p/${post.id}`} href={`/post?id=${post.id}`}>
       <a>{post.name}</a>
     </Link>
   </li>
